@@ -1,45 +1,65 @@
-# Khush Shah — Portfolio
+# Khush Shah
 
-A polished, responsive, zero-build portfolio for **Khush Shah**, focused on Data Science, Machine Learning, data analysis, software engineering and problem solving.
+I'm a software engineering student exploring the world of **Data Science and Machine Learning**. I enjoy working with data, finding patterns, visualizing insights, and understanding the mathematics and reasoning behind the methods I use.
 
-## Stack
+I'm especially interested in the intersection of **data, mathematics, and programming**. I like learning how things work internally, paying attention to details, and building a deeper understanding rather than stopping at surface-level usage.
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Google Fonts
-- No framework / no build step
+## What I'm interested in
 
-## Run locally
+- Data analysis, data cleaning, and exploratory data analysis
+- Statistics, probability, linear algebra, calculus, and optimization
+- Machine learning and neural networks
+- Data visualization and communicating insights clearly
+- Problem solving and understanding software systems
 
-Open `index.html` directly, or use VS Code Live Server.
+## Skills and foundations
 
-## Deploy on GitHub Pages
+- **Languages:** Python, C++
+- **Data:** SQL, Pandas, NumPy, data cleaning, exploratory data analysis, visualization
+- **Backend:** FastAPI, REST APIs, PostgreSQL, SQLAlchemy, Alembic, JWT authentication
+- **Core CS:** Data structures and algorithms, OOP, DBMS, operating systems, computer networks, COA, and TOC
+- **Other learning:** Discrete mathematics, design thinking, financial management, and economics
 
-1. Create a new GitHub repository.
-2. Upload/push all files in this folder.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select `main` and `/root`.
-6. Save.
+I'm continuing to strengthen my practical data skills while deepening my understanding of statistics and machine learning.
 
-Your portfolio will be available at:
+## Selected projects
 
-`https://YOUR_USERNAME.github.io/REPOSITORY_NAME/`
+### CampusPulse
+A student performance and engagement analytics project focused on bringing data together for cleaning, exploration, visualization, and insight generation.
 
-## Deploy on Vercel
+**Tools:** Python, Pandas, NumPy, SQL, Matplotlib, Seaborn
 
-Import the GitHub repository into Vercel. No build command is required.
+### RenewAI
+An AI-powered renewable-energy forecasting and decision-support project. I worked on designing the frontend and backend and integrating the two; a teammate handled the ML modelling.
 
-## Before publishing
+[View repository](https://github.com/khushshah0607-67/RenewAI)
 
-Search `index.html` for:
+### CastAhead
+An AI-powered demand-forecasting platform designed to help store owners and inventory managers make better inventory decisions. My contribution was backend development, including the FastAPI server and REST API endpoints.
 
-- `YOUR_EMAIL@example.com`
-Replace `YOUR_EMAIL@example.com` with your preferred contact email before publishing.
+### GlobeTrotter
+A collaborative trip-planning hackathon project. I worked on backend and database functionality, including authentication, trip operations, budget summaries, and member permissions.
 
-Project cards include the RenewAI repository link. Add repository/demo links for other projects when you want to publish them.
+### StudySphere
+A backend learning project through which I explored API architecture, authentication, database models, services, repositories, schemas, and migrations.
 
-## Personalization
+## Learning milestones
 
-The portfolio intentionally avoids unsupported claims. Add actual awards, CGPA, certifications, rankings, competition results, internship details, resume link, and live project links only when you have the verified details.
+- Completed the SQL roadmap
+- Completed the Python for Data Analysis roadmap
+- Worked through the Data Analyst roadmap
+- Attended a college workshop on Python data visualization and received a certificate
+- Participated in three hackathons, contributing to backend development, frontend/backend integration, and collaborative software projects
+
+## How I approach learning
+
+I value curiosity, attention to detail, and continuous improvement. I enjoy asking why something works, exploring the ideas behind it, and gradually building the proficiency to apply that understanding in real projects.
+
+My current goal is to grow into data-focused work by combining analytical thinking, mathematical foundations, and practical programming.
+
+## Find me online
+
+- **GitHub:** [khushshah0607-67](https://github.com/khushshah0607-67)
+- **Portfolio:** [khushshah0607-67.github.io/Portfolio](https://khushshah0607-67.github.io/Portfolio/)
+- **Email:** [khushshah0607@gmail.com](mailto:khushshah0607@gmail.com)
+- **LinkedIn:** [khushshah0607@gmail.com](https://www.linkedin.com/in/khush-shah-ks0607)
