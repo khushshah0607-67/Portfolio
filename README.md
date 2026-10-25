@@ -62,4 +62,4 @@ My current goal is to grow into data-focused work by combining analytical thinki
 - **GitHub:** [khushshah0607-67](https://github.com/khushshah0607-67)
 - **Portfolio:** [khushshah0607-67.github.io/Portfolio](https://khushshah0607-67.github.io/Portfolio/)
 - **Email:** [khushshah0607@gmail.com](mailto:khushshah0607@gmail.com)
-- **LinkedIn:** [khushshah0607@gmail.com](https://www.linkedin.com/in/khush-shah-ks0607)
+- **LinkedIn:** [Khush Shah](https://www.linkedin.com/in/khush-shah-ks0607)
