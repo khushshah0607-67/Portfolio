@@ -1,0 +1,115 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080b12;--surface:#0e131d;--surface2:#111827;--text:#f2f5f9;--muted:#929bab;
+  --line:rgba(255,255,255,.09);--accent:#9eff63;--accent2:#7c5cff;--cyan:#54d9ff;
+  --max:1180px
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 80% 5%,rgba(124,92,255,.12),transparent 28%),radial-gradient(circle at 5% 40%,rgba(84,217,255,.07),transparent 25%);z-index:-2}
+.noise{position:fixed;inset:0;opacity:.025;pointer-events:none;z-index:20;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;max-width:var(--max);margin:auto;padding:0 24px;position:relative;z-index:10}
+.brand{display:flex;align-items:center;gap:11px;font-family:"Space Grotesk";font-weight:700}
+.brand-mark{width:34px;height:34px;border:1px solid var(--line);display:grid;place-items:center;border-radius:9px;background:rgba(255,255,255,.03);color:var(--accent)}
+.nav nav{display:flex;gap:31px;margin-left:auto;margin-right:32px}
+.nav nav a{font-size:13px;color:var(--muted);transition:.25s}
+.nav nav a:hover{color:var(--text)}
+.nav-cta{font-size:13px;border:1px solid var(--line);padding:9px 14px;border-radius:9px}
+.menu-btn{display:none;background:none;color:var(--text);border:0;font-size:22px}
+.section{max-width:var(--max);margin:auto;padding:110px 24px}
+.hero{min-height:calc(100vh - 76px);display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:60px;padding-top:70px}
+.eyebrow,.section-label{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted)}
+.eyebrow{display:flex;align-items:center;gap:9px;margin-bottom:24px}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 16px var(--accent)}
+h1,h2,h3{font-family:"Space Grotesk";line-height:1.05}
+h1{font-size:clamp(54px,7vw,92px);letter-spacing:-4px;max-width:780px}
+h1 span,h2 span,.kicker{color:var(--accent)}
+.hero-text{color:var(--muted);max-width:590px;font-size:17px;margin:28px 0 32px}
+.hero-actions,.contact-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 18px;border-radius:9px;font-weight:600;font-size:13px;transition:.25s;border:1px solid var(--line)}
+.btn.primary{background:var(--accent);color:#071007;border-color:var(--accent)}
+.btn.primary:hover{transform:translateY(-2px);box-shadow:0 10px 35px rgba(158,255,99,.14)}
+.btn.ghost:hover{border-color:rgba(255,255,255,.25);transform:translateY(-2px)}
+.mini-stats{display:flex;gap:30px;margin-top:48px;padding-top:22px;border-top:1px solid var(--line);max-width:590px}
+.mini-stats div{display:flex;flex-direction:column;gap:3px}
+.mini-stats strong{font:600 14px "Space Grotesk"}
+.mini-stats span{font-size:11px;color:var(--muted)}
+.hero-visual{height:530px;position:relative;display:grid;place-items:center}
+.orb{position:absolute;border-radius:50%;filter:blur(1px)}
+.orb-one{width:370px;height:370px;background:radial-gradient(circle,rgba(124,92,255,.24),transparent 68%);top:60px;right:10px}
+.orb-two{width:250px;height:250px;background:radial-gradient(circle,rgba(84,217,255,.12),transparent 68%);bottom:20px;left:20px}
+.data-card{position:relative;width:min(450px,90%);background:rgba(14,19,29,.84);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:23px;box-shadow:0 35px 100px rgba(0,0,0,.45);backdrop-filter:blur(18px);transform:rotate(2deg)}
+.card-top,.card-footer{display:flex;justify-content:space-between;color:#727b8b;font:12px "Space Grotesk";border-bottom:1px solid var(--line);padding-bottom:14px}
+.live-dot{color:var(--accent);font-size:9px}
+.code-line{font:15px/1.8 "Space Grotesk";color:#d9dfeb}
+.indent{padding-left:25px}.purple{color:#bd9cff}.green{color:var(--accent)}
+.chart{height:120px;margin:22px 0;display:flex;align-items:end;gap:11px;padding:10px;border-left:1px solid var(--line);border-bottom:1px solid var(--line);position:relative}
+.bar{width:34px;border-radius:5px 5px 0 0;background:linear-gradient(to top,var(--accent2),#a78cff);opacity:.85}
+.b1{height:36%}.b2{height:58%}.b3{height:47%}.b4{height:78%}.b5{height:64%}.b6{height:92%}
+.chart-line{position:absolute;left:7px;right:6px;top:34%;height:1px;background:var(--accent);transform:rotate(-5deg);opacity:.7}
+.card-footer{border:0;padding:0;font-size:10px}
+.floating-tag{position:absolute;padding:8px 12px;border:1px solid var(--line);background:#101620;border-radius:8px;font:12px "Space Grotesk";box-shadow:0 10px 30px #0006}
+.tag-one{top:105px;left:4px;color:var(--accent)}.tag-two{right:0;top:270px;color:#b9a8ff}.tag-three{bottom:60px;left:40px;color:var(--cyan)}
+.split-section{display:grid;grid-template-columns:.32fr 1fr;gap:80px;border-top:1px solid var(--line)}
+.section-content{max-width:800px}.kicker{font:600 13px "Space Grotesk";margin-bottom:17px}
+h2{font-size:clamp(38px,5vw,62px);letter-spacing:-2.5px}
+.section-content h2{margin-bottom:28px}.section-content p{color:var(--muted);max-width:760px;margin-bottom:16px;font-size:16px}
+.about-pills,.tech-stack{display:flex;gap:7px;flex-wrap:wrap;margin-top:25px}
+.about-pills span,.tech-stack span{border:1px solid var(--line);border-radius:100px;padding:6px 10px;font-size:11px;color:#bac2d0;background:rgba(255,255,255,.025)}
+.work-section{border-top:1px solid var(--line)}
+.section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:45px}
+.section-heading p{color:var(--muted);max-width:330px;font-size:14px}
+.section-heading h2{margin-top:12px}
+.projects-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:14px}
+.project-card{min-height:420px;background:linear-gradient(145deg,#101620,#0c1119);border:1px solid var(--line);border-radius:15px;padding:27px;position:relative;display:flex;flex-direction:column;overflow:hidden;transition:.3s}
+.project-card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.2)}
+.project-card:after{content:"";position:absolute;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(124,92,255,.13),transparent 68%);right:-100px;top:-100px}
+.project-card.featured{grid-row:span 2;min-height:855px;background:linear-gradient(155deg,#111928,#0b1018)}
+.project-number{position:absolute;right:25px;top:25px;color:#394150;font:600 12px "Space Grotesk"}
+.project-meta{display:flex;justify-content:space-between;color:#727b8b;font-size:10px;letter-spacing:1.6px;margin-bottom:auto}
+.project-card h3{font-size:clamp(30px,4vw,48px);letter-spacing:-1.5px;margin-top:100px}
+.project-card:not(.featured) h3{font-size:34px;margin-top:70px}
+.project-subtitle{color:var(--accent);font-size:13px;margin:8px 0 18px}
+.project-card>p:not(.project-subtitle){color:var(--muted);font-size:14px;max-width:580px}
+.project-footer{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:24px;border-top:1px solid var(--line);font-size:11px;color:#737d8d}
+.arrow{font-size:22px;color:var(--text)}
+.timeline-section{border-top:1px solid var(--line)}
+.timeline-wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:90px;margin-top:45px}
+.timeline-intro h2{margin:15px 0 20px}.timeline-intro p{color:var(--muted);max-width:330px}
+.timeline{border-left:1px solid var(--line);padding-left:35px}
+.timeline-item{position:relative;padding:0 0 30px}
+.timeline-dot{position:absolute;width:9px;height:9px;border-radius:50%;background:var(--accent);left:-40px;top:5px;box-shadow:0 0 15px rgba(158,255,99,.5)}
+.timeline-date{font-size:10px;letter-spacing:2px;color:var(--accent);margin-bottom:13px}
+.timeline-item h3{font-size:30px}.role{font-size:13px;color:#c2c9d5;margin:8px 0 16px}.timeline-item>p:not(.role){font-size:14px;color:var(--muted);max-width:680px}
+.skills-section{border-top:1px solid var(--line)}
+.skills-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:50px}
+.skill-group{min-height:330px;padding:25px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.skill-index{font:11px "Space Grotesk";color:var(--accent);display:block;margin-bottom:65px}.skill-group h3{font-size:23px;margin-bottom:22px}
+.skill-group ul{list-style:none;color:var(--muted);font-size:13px}.skill-group li{padding:7px 0;border-bottom:1px solid rgba(255,255,255,.045)}
+.journey-section{padding-top:60px}.journey-card{padding:55px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(circle at 90% 0%,rgba(124,92,255,.14),transparent 35%),#0d131d}
+.journey-card h2{margin:18px 0}.journey-card>p{max-width:650px;color:var(--muted);font-size:15px}
+.journey-track{display:flex;align-items:center;margin-top:55px}.journey-step{display:flex;align-items:center;gap:10px;color:#667080;font:12px "Space Grotesk"}.journey-step b{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center}.journey-step.active{color:var(--text)}.journey-step.active b{border-color:var(--accent);color:var(--accent)}.track-line{height:1px;background:var(--line);flex:1;margin:0 16px}
+.achievements-section{border-top:1px solid var(--line)}
+.achievement-grid{display:grid;grid-template-columns:1fr 1fr;margin-top:42px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.achievement{display:flex;gap:20px;padding:28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.achievement-icon{width:36px;height:36px;border:1px solid var(--line);border-radius:9px;display:grid;place-items:center;color:var(--accent);flex:none}
+.achievement strong{font:600 16px "Space Grotesk"}.achievement p{color:var(--muted);font-size:13px;margin-top:5px}
+.contact-section{padding-bottom:70px}.contact-inner{border-top:1px solid var(--line);padding-top:90px;text-align:center}.contact-inner h2{margin:18px auto 20px}.contact-inner p{max-width:600px;color:var(--muted);margin:0 auto 28px}.contact-actions{justify-content:center}.contact-note{margin-top:22px;color:#646d7b;font-size:11px}code{color:var(--accent)}
+footer{max-width:var(--max);margin:auto;padding:25px 24px 35px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#606977;font-size:11px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){
+  .nav nav{display:none}.nav-cta{margin-left:auto;margin-right:12px}.menu-btn{display:block}
+  .nav nav.open{display:flex;position:absolute;top:68px;left:15px;right:15px;background:#0d131d;border:1px solid var(--line);border-radius:12px;padding:18px;flex-direction:column;gap:17px;margin:0}
+  .hero{grid-template-columns:1fr;padding-top:45px}.hero-visual{height:440px}.hero h1{font-size:clamp(48px,12vw,78px)}
+  .projects-grid{grid-template-columns:1fr}.project-card.featured{grid-row:auto;min-height:520px}.project-card{min-height:390px}
+  .skills-grid{grid-template-columns:1fr 1fr}.timeline-wrap{grid-template-columns:1fr;gap:45px}
+}
+@media(max-width:600px){
+  .section{padding:75px 20px}.nav{padding:0 18px}.nav-cta{display:none}
+  .mini-stats{gap:16px;flex-wrap:wrap}.mini-stats div{min-width:100px}.hero-visual{height:390px}.data-card{width:95%}
+  .floating-tag{font-size:10px}.tag-one{left:-3px}.tag-two{right:-2px}.tag-three{left:10px}
+  .split-section{grid-template-columns:1fr;gap:25px}.section-heading{display:block}.section-heading p{margin-top:16px}
+  .skills-grid,.achievement-grid{grid-template-columns:1fr}.journey-card{padding:30px 22px}.journey-track{overflow-x:auto;padding-bottom:10px;min-width:620px}.journey-card{overflow:hidden}
+  footer{padding:22px 20px;gap:10px;flex-direction:column}
+}
